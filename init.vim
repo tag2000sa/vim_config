@@ -54,7 +54,7 @@ map <leader>tt :tabnext<cr>
 map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/<cr>
 
 "" SNIPPETS
-map <F7> :0r ~/.config/nvim/templates/header.snpt<cr>V4j:call CommentLine()<cr>j
-imap <F7> <esc>:-1r ~/.config/nvim/templates/header.snpt<cr>V4j:call CommentLine()<cr>ji
-map <F8> :-1r ~/.config/nvim/templates/bash.snpt<cr>ji
-map <F9> :-1r ~/.config/nvim/templates/c.snpt<cr>GGdd/return<cr>O
+map <F7> :0r ~/.config/vim/templates/header.snpt<cr>V4j:call CommentLine()<cr>j
+imap <F7> <esc>:-1r ~/.config/vim/templates/header.snpt<cr>V4j:call CommentLine()<cr>ji
+map <F8> :-1r ~/.config/vim/templates/bash.snpt<cr>ji
+map <F9> :-1r ~/.config/vim/templates/c.snpt<cr>GGdd/return<cr>O

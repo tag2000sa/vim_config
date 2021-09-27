@@ -2,6 +2,7 @@
 set number
 set relativenumber
 syntax on
+set autoindent
 set nowrap
 set encoding=utf-8
 colorscheme desert
@@ -16,7 +17,7 @@ set signcolumn=yes
 set cursorline
 highlight LineNR cterm=none ctermfg=white ctermbg=gray
 highlight CursorLineNR cterm=bold ctermfg=darkred  ctermbg=yellow
-highlight CursorLine cterm=underline ctermfg=none  ctermbg=black
+highlight CursorLine cterm=none ctermfg=none  ctermbg=black
 "set foldmethod=indent
 
 "" KEY REMAPING
@@ -65,4 +66,4 @@ map <leader>e  :Explore %:p:h<cr>
 map <F7> :0r ~/.config/vim/templates/header.snpt<cr>V4j:call CommentLine()<cr>j
 imap <F7> <esc>:-1r ~/.config/vim/templates/header.snpt<cr>V4j:call CommentLine()<cr>ji
 map <F8> :-1r ~/.config/vim/templates/bash.snpt<cr>ji
-m-1r ~/.config/vim/templates/c.snpt<cr>GGdd/return<cr>O
+map <F9> :-1r ~/.config/vim/templates/c.snpt<cr>GGdd/return<cr>O

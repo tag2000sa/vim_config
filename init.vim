@@ -4,7 +4,7 @@ set relativenumber
 syntax on
 set nowrap
 set encoding=utf-8
-colorscheme darkblue
+colorscheme desert
 set background=dark
 set showcmd 
 set ignorecase
@@ -16,7 +16,7 @@ set signcolumn=yes
 set cursorline
 highlight LineNR cterm=none ctermfg=white ctermbg=gray
 highlight CursorLineNR cterm=bold ctermfg=darkred  ctermbg=yellow
-highlight CursorLine cterm=none ctermfg=none  ctermbg=darkblue
+highlight CursorLine cterm=underline ctermfg=none  ctermbg=black
 "set foldmethod=indent
 
 "" KEY REMAPING
@@ -57,11 +57,12 @@ map <leader>tt :tabnext<cr>
 map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/<cr>
 
 "" SPLITS
-map <leader>hs :split<c-r>=expand("%:p:h")<cr>/<cr>
-map <leader>vs :vsplit<c-r>=expand("%:p:h")<cr>/<cr>
+map <leader>hs :new<cr>
+map <leader>vs :vnew<cr>
+map <leader>e  :Explore %:p:h<cr>
 
 "" SNIPPETS
 map <F7> :0r ~/.config/vim/templates/header.snpt<cr>V4j:call CommentLine()<cr>j
 imap <F7> <esc>:-1r ~/.config/vim/templates/header.snpt<cr>V4j:call CommentLine()<cr>ji
 map <F8> :-1r ~/.config/vim/templates/bash.snpt<cr>ji
-map <F9> :-1r ~/.config/vim/templates/c.snpt<cr>GGdd/return<cr>O
+m-1r ~/.config/vim/templates/c.snpt<cr>GGdd/return<cr>O

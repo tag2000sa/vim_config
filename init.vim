@@ -24,6 +24,8 @@ let mapleader="/"
 map <leader>w :w<cr>
 map <leader>wq :wq<cr>
 map <leader>q1 :q!<cr>
+map <leader>qc :cq<cr> "cancel all and quit
+map <leader>qa :wqa<cr> "save all and quit
 
 "" TOGGLE LOCAL PASTE MODE
 nmap <F2> :set invpaste paste?<cr>
@@ -53,6 +55,10 @@ map <leader>tn :tabnew<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tt :tabnext<cr>
 map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/<cr>
+
+"" SPLITS
+map <leader>hs :split<c-r>=expand("%:p:h")<cr>/<cr>
+map <leader>vs :vsplit<c-r>=expand("%:p:h")<cr>/<cr>
 
 "" SNIPPETS
 map <F7> :0r ~/.config/vim/templates/header.snpt<cr>V4j:call CommentLine()<cr>j

@@ -34,6 +34,7 @@ set pastetoggle=<F2>
 autocmd FileType c,cpp,java	let b:comment_leader='\/\/'
 autocmd FileType sh,bash	let b:comment_leader='#'
 autocmd FileType vim		let b:comment_leader='"'
+autocmd FileType *.*		let b:comment_leader=''
 function! CommentLine()
 	execute ':s/^\(.*\)/'.b:comment_leader.'\1/g'
 endfunction

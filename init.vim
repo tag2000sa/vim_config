@@ -17,7 +17,7 @@ set cursorline
 highlight LineNR cterm=none ctermfg=white ctermbg=gray
 highlight CursorLineNR cterm=bold ctermfg=darkred  ctermbg=yellow
 highlight CursorLine cterm=none ctermfg=none  ctermbg=darkblue
-set foldmethod=indent
+"set foldmethod=indent
 
 "" KEY REMAPING
 let mapleader="/"

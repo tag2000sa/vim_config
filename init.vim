@@ -2,7 +2,6 @@
 set number
 set relativenumber
 syntax on
-set autoindent
 set nowrap
 set encoding=utf-8
 colorscheme desert
@@ -19,6 +18,9 @@ highlight LineNR cterm=none ctermfg=white ctermbg=gray
 highlight CursorLineNR cterm=bold ctermfg=darkred  ctermbg=yellow
 highlight CursorLine cterm=none ctermfg=none  ctermbg=black
 "set foldmethod=indent
+set autoindent
+filetype plugin indent on
+filetype indent on
 
 "" KEY REMAPING
 let mapleader="/"

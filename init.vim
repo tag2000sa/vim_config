@@ -62,6 +62,14 @@ inoremap <A-Down> <Esc>:m+<CR>==gi
 vnoremap <A-Up> :m '<-2<CR>gv=gv
 vnoremap <A-Down> :m '>+1<CR>gv=gv
 
+"" INDENT LINES
+nnoremap <A-Right> >>
+nnoremap <A-Left> <<
+inoremap <A-Right> <Esc>>>gi
+inoremap <A-Left> <Esc><<gi
+vnoremap <A-Right> >gv
+vnoremap <A-Left> <gv
+
 "" TABS
 map <leader>tn :tabnew<cr>
 map <leader>tc :tabclose<cr>

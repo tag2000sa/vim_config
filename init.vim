@@ -25,6 +25,7 @@ filetype indent on
 "" KEY REMAPING
 let mapleader="/"
 map <leader>w :w<cr>
+map <leader>q :confirm q<cr>
 map <leader>wq :wq<cr>
 map <leader>q1 :q!<cr>
 map <leader>qc :cq<cr> "cancel all and quit

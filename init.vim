@@ -54,6 +54,12 @@ map <leader>C :call UncommentLine()<cr>
 nmap <F3> "=strftime("%d/%m/%y %H:%M:%S")<cr>p
 imap <F3> <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
 
+"" CURSOR MOVEMENT
+inoremap <C-H> <Esc>ha
+inoremap <C-J> <Esc>ja
+inoremap <C-K> <Esc>ka
+inoremap <C-L> <Esc>la
+
 "" MOVING LINES
 nnoremap <A-Up> :m-2<CR>==
 nnoremap <A-Down> :m+<CR>==
